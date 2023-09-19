@@ -1,0 +1,2480 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+  <title>NT Gaming</title>
+    <meta charset="UTF-8">  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <link rel="stylesheet" href="icones.min.css" type ="text/css">
+    <link rel="stylesheet" href="style.css" type ="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" > 
+</head>
+<style type="text/css" href="style.css">
+       * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+      }
+      .nav-bar a {
+         text-decoration: none;
+         color: black;
+         display: block;
+		 
+      }
+      .nav-bar > ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+      }
+      .nav-bar > ul > li > a {
+         padding: 5px;
+         background: white;
+      }
+      .nav-bar > ul > li > a:hover {
+         background: white;
+         color: blue;
+		 border-top:2px solid blue;
+      }
+      
+      .nav-bar > ul > li {
+         float: right;
+         width: 10%; 
+         text-align: center;
+      }
+   </style>
+<body>
+   <div class="nav-bar">
+      <ul>
+         <li><a href="contactUs.html">Contact us </a></li>
+        <li><a href="aboutUs.html">About us </a></li>
+        <li><a href="#"> Games </a></li>
+      </ul>
+   </div>
+
+
+<img src="img/logo.jpeg" width="120" height="73">
+
+<br> <br>
+  
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+ body {
+            overflow-x: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif
+        }
+
+        .dd {
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+        .nav-bar2 {
+            position: relative;
+            width: 1470px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            border: 0px solid red;
+            position: relative;
+			box-shadow:0 5px 10px rgba(0,0,0,0.5);
+
+        }
+
+        .nav-bar2 a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-bar2 ul {
+            list-style-type: none;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            border-right: 1px solid rgba(0, 0, 0, 1, 2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+			
+        }
+
+        .nav-bar2 ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar2 ul li .icon {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: lightgrey;
+            cursor: pointer;
+            font-size: 28px;
+            border-right: 1px solid rgb(0, 0, 0, 0, 2);
+        }
+
+        .nav-bar2 ul li .icon:hover {
+
+            color: ForestGreen;
+            border: 1px solid green;
+
+        }
+
+
+
+        .nav-bar2 ul li {
+            float: left;
+            right: 50%;
+            width: 7.6%;
+            text-align: center;
+        }
+
+        .nav-bar2 ul li .name {
+
+            font-size: 0.6em;
+        }
+
+        .btn {
+            background: -webkit-linear-gradient(rgb(43, 248, 94), rgb(22, 156, 28),rgb(43, 248, 94));
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+            font-size: 50px;
+            background-color: lightgrey;
+			border:none;
+			 position: absolute;
+           top:18px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+		 text-align: center;
+        }
+
+        .btn2 {
+            border: lightgray;
+            cursor: pointer;
+            background: -webkit-linear-gradient(rgb(43, 248, 94), rgb(22, 156, 28),rgb(43, 248, 94));
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+            font-size: 50px;
+            background-color: lightgrey;  
+     position: absolute;			
+            top:18px;
+            display: flex;
+          justify-content: center;
+          align-items: center;
+
+
+        }
+        .rightArrow {
+            position: absolute;
+           top:95px;
+            right: 0px;
+            width: 80px;
+            height: 80px;
+            background-color: lightgrey;
+			
+
+        }
+
+        .left_Arrow {
+            text-align: center;
+            margin-left: 10px;
+            position: absolute;
+            top:95px;
+            left: 0px;
+            overflow: hidden;
+            width: 80px;
+            height: 80px;
+            background-color: lightgrey;
+            display: none;
+
+        }
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+	box-shadow:0 5px 10px rgba(0,0,0,0.5);
+	
+}
+
+.right-container {
+    height: 100vh;
+    width: 70%;
+    background: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+ .container .right-container .card1:hover {
+         background :#00bfff;
+         color: black;
+		border:2px solid blue;
+	
+      }
+
+.left-container {
+    height: 100vh;
+    width: 30%;
+    background:lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+#default {
+    display: flex;
+}
+
+#carGames {
+    display: none;
+}
+
+#puzzleGames {
+    display: none;
+}
+
+#actionGames {
+    display: none;
+}
+
+#girlGames {
+    display: none;
+}
+
+#cookingGames {
+    display: none;
+}
+
+#shootingGames {
+    display: none;
+}
+
+#racingGames {
+    display: none;
+}
+
+#dressupGames {
+    display: none;
+}
+
+#sportGames {
+    display: none;
+}
+
+#kidsGames {
+    display: none;
+}
+
+#multiplayerGames {
+    display: none;
+}
+
+#strategyGames {
+    display: none;
+}
+
+.card1 {
+    width: 26%;
+    height: 200px;
+    margin: 1.5em;
+    padding: 3px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    text-decoration: none;
+    background: #fff;
+	box-shadow:0 5px 10px rgba(0,0,0,0.5);
+}
+
+.card1 h2 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.card1 p {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.card1 .stars {
+    margin-top: 5px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.card1 .stars .fa {
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+.card1 .stars .far {
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+
+.card1 img {
+    width: 100%;
+    height: 100px;
+	border-radius:15px;
+}
+
+.container .left-container .card img {
+    width: 70%;
+    height: 100%;
+	border-radius:15px;
+}
+
+.container .right-container h2 {
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container .left-container .card {
+    width: 100%;
+    height: 140px;
+    background: #fff;
+    margin: 1.5em;
+    margin-bottom: 20px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+	box-shadow:0 5px 10px rgba(0,0,0,0.5);
+}
+
+.container .left-container h2 {
+    width: 100%;
+    margin: 5%;
+    margin-bottom: 2%;
+    text-decoration: none;
+}
+
+.rimage {
+    height: 100%;
+    width: 100%;
+}
+</style>
+
+    
+  <div class="dd" id="dd">
+
+        <div class="nav-bar2">
+            <ul OnClick="random()">
+
+
+                <li>
+                    <div class="icon" id="car1"> <i class="fa fa-car" aria-hidden="true"></i>
+                        <div class="name"> car </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" id="puzzle1"> <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+                        <div class="name"> puzzle </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="action1"> <i class="fa fa-bomb" aria-hidden="true"> </i>
+                        <div class="name">action</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="girl1"> <i class="fa fa-female" aria-hidden="true"> </i>
+                        <div class="name"> girl</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="cooking1"> <i class="fas fa-cookie" aria-hidden="true"> </i>
+                        <div class="name">cooking </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="shooting1"> <i class="fa fa-bullseye" aria-hidden="true"></i>
+                        <div class="name"> shooting </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="racing1"> <i class="fa fa-motorcycle" aria-hidden="true"> </i>
+                        <div class="name">racing </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="dressup1"> <i class="fas fa-user-secret" aria-hidden="true"> </i>
+                        <div class="name">dressup </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="sport1"><i class="far fa-futbol" aria-hidden="true"></i>
+                        <div class="name"> sport</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="kids1"> <i class="fa fa-male" aria-hidden="true"> </i>
+                        <div class="name"> kids</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="multiplayer1"> <i class="fa fa-users" aria-hidden="true"> </i>
+                        <div class="name">multiplayer </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon" id="strategy1"> <i class="fa fa-flag" aria-hidden="true"></i>
+                        <div class="name">strategy </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" id="strategy1"> <i class="" aria-hidden="true"></i>
+                        <div class="name"> </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="rightArrow" id="click1">
+            <button id="right_button" class="btn"><i class="fa fa-caret-right"></i></button>
+
+        </div>
+        <div class="left_Arrow" id="click2">
+            <button id="left-button" class="btn2"><i class="fa fa-caret-left"></i></button>
+			</div>
+			
+    </div>
+  
+  
+   <script>
+        var right = document.querySelector('#click1');
+        
+        right.addEventListener("click", function (event) {
+            var conent = document.querySelector('#dd');
+
+            conent.scrollLeft += 40;
+            console.log(conent.scrollLeft)
+            if (conent.scrollLeft > 0) {
+
+                document.getElementById("click2").style.display = "block";
+
+            }
+            if (conent.scrollLeft > 103) {
+                document.getElementById("click1").style.display = "none";
+            }
+
+            event.preventDefault();
+        });
+        var left = document.querySelector('#click2');
+        left.addEventListener("click", function (event) {
+            var conent = document.querySelector('#dd');
+
+            conent.scrollLeft -= 40;
+            if (conent.scrollLeft == 0) {
+            document.getElementById("click1").style.display = "block";
+            document.getElementById("click2").style.display = "none";
+
+
+        }
+
+            event.preventDefault();
+        });
+
+
+    </script>
+  
+<br> <br>
+
+
+<style type="text/css">
+         body {  
+            margin: 0;  
+            background-image: url('img/beg.jpg');
+ background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+        }  
+
+        .cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border: 7px solid lightgrey;
+			border-bottom: 14px solid lightgrey;
+           
+        }
+
+        .showSlide {
+            display: none
+        }
+
+        .showSlide img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .slidercontl {
+            width: 600px;
+            height: 407px;
+            position: relative;
+			border: 7px solid lightgrey;
+			
+        }
+.slidercont{
+            width: 1800px;
+            height: 407px;
+            position: relative;
+			border: 7px solid lightgrey;
+        }
+
+.slidercontr {
+            width: 600px;
+            height: 407px;
+            position: relative;
+			border: 7px solid lightgrey;
+        }
+
+        .left,
+        .right {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .right {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .left:hover,
+        .right:hover {
+            background-color: green;
+        }
+
+        
+        .active {
+            background-color: #717171;
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+
+
+    <div class="cont">
+        <div class="slidercontl">
+            <div class="showSlide showSlide1 fade">
+                <img src="img/action1.jpg"  />
+            </div>
+            <div class="showSlide showSlide1 fade">
+                <img src="img/car11.jpg" />
+            </div>
+            <div class="showSlide showSlide1 fade">
+                <img src="img/car111.jpg" />
+            </div>
+            
+        </div>
+        <div class="slidercont">
+            <div class="showSlide showSlide2 fade">
+                <img src="img/action1.jpg"  />
+            </div>
+            <div class="showSlide showSlide2 fade">
+                <img src="img/car11.jpg" />
+            </div>
+            <div class="showSlide showSlide2 fade">
+                <img src="img/car111.jpg" />
+            </div>
+            
+            <a class="left" onclick="nextSlide(1)">❮</a>
+            <a class="right" onclick="nextSlide(-1)">❯</a>
+        </div>
+        <div class="slidercontr">
+            <div class="showSlide3 showSlide fade">
+                <img src="img/action1.jpg"  />
+            </div>
+            <div class="showSlide3 showSlide fade">
+                <img src="img/car11.jpg" />
+            </div>
+            <div class="showSlide3 showSlide fade">
+                <img src="img/car111.jpg" />
+            </div>
+           
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //leftslider  
+        var slide_index1 = 1;
+        var slide_index2 = 2;
+        var slide_index3 = 3;
+        displaySlides1(slide_index2);
+
+        function nextSlide(n) {
+            displaySlides1(slide_index1 += n);
+            displaySlides2(slide_index2 += n);
+            displaySlides3(slide_index3 += n);
+        }
+		
+
+        function currentSlide1(n) {
+            displaySlides1(slide_index1 = n);
+        }
+
+        function displaySlides1(n) {
+            var i;
+            var slides1 = document.getElementsByClassName("showSlide1");
+            if (n > slides1.length) {
+                slide_index1 = 1
+            }
+            if (n < 1) {
+                slide_index1 = slides1.length
+            }
+            for (i = 0; i < slides1.length; i++) {
+                slides1[i].style.display = "none";
+            }
+            slides1[slide_index1 - 1].style.display = "block";
+        }
+
+        //middle slider
+        displaySlides2(slide_index2);
+
+        function currentSlide2(n) {
+            displaySlides2(slide_index2 = n);
+        }
+
+        function displaySlides2(n) {
+            var i;
+            var slides2 = document.getElementsByClassName("showSlide2");
+            if (n > slides2.length) {
+   
+   slide_index2 = 1
+            }
+            if (n < 1) {
+                slide_index2 = slides2.length
+            }
+            for (i = 0; i < slides2.length; i++) {
+                slides2[i].style.display = "none";
+            }
+            slides2[slide_index2 - 1].style.display = "block";
+        }
+
+        //right slider
+        displaySlides3(slide_index3);
+
+        function currentSlide3(n) {
+            displaySlides3(slide_index3 = n);
+        }
+
+        function displaySlides3(n) {
+            var i;
+            var slides3 = document.getElementsByClassName("showSlide3");
+            if (n > slides3.length) {
+                slide_index3 = 1
+            }
+            if (n < 1) {
+                slide_index3 = slides3.length
+            }
+            for (i = 0; i < slides3.length; i++) {
+                slides3[i].style.display = "none";
+            }
+            slides3[slide_index3 - 1].style.display = "block";
+        }
+		setInterval(function(){
+displaySlides1(slide_index1 += 1);
+displaySlides2(slide_index2 += 1);
+displaySlides3(slide_index3 += 1);},3000)
+    </script>
+
+
+
+
+
+
+<style type="text/css">
+      .div2 {
+         border-radius: 30px;
+		 border: 1px solid black;
+         width: 300px;
+         height: 40px;
+         padding: 10px;
+         color: black;
+         background: white;
+		 text-align:center;
+		}
+		
+		
+		.img{
+	  width:40px;
+	  height:40px;
+	  border-radius :50%;
+	  margin-left:0px;  
+	 }
+   </style>
+   
+   <br>
+  <p  style="position:absolute; padding:20px;"> Filters </p>
+   <div class="div2" style="position:absolute;top:360;  left:70px; ">
+   <img src="img/game.jpg" class="img" style ="position:absolute;left:0px;top:0px;"/>
+   Multiplayer  </div>  
+
+ 
+<div class="div2"  style="position:absolute;top:360;  left:400px;"> 
+<img src="img/infini.jpg" class="img" style =" margin-left:0px;position:absolute; left:0px;top:0px;"/>
+Infinite Play</div>
+   
+   
+   <br><br>
+  <p style="color:black; ;padding:20px; "> 96 games availbles</P>
+   
+   <br>
+   
+
+
+ <div class="container "  >
+        <div class="right-container"  id="visi" style="visibility:hidden"  >
+            <h2 id="top-text1"></h2>
+            
+            <div class="car" id="carGames" style="flex-wrap: wrap;
+            justify-content: space-between;
+            text-decoration: none;">
+            <div class="card1">
+                <img  src= "img/car111.jpg"    alt="car"   >
+                <h2>brand prix </h2>
+                <p>racing cars.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/car11.jpg"   alt="car"   >
+                <h2>Dragon car</h2>
+                <p>car island race.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/car6.jfif"    alt="car"   >
+                <h2>CARS</h2>
+                <p>funy game car.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/car7.jfif"   alt="car"   >
+                <h2>Speed car</h2>
+                <p>action car game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/car1.jfif"     alt="car"   >
+                <h2> car</h2>
+                <p>fantastic cars.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/car2.jfif" alt="car"   >
+                <h2>CARS</h2>
+                <p>cars game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/car4.jfif"   alt="car"   >
+                <h2>Most wanted </h2>
+                <p>police cars.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/car22.jpg"alt="car"   >
+                <h2>race</h2>
+                <p>race cars.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/car33.jpg"  alt="car"   >
+                <h2>Truck car</h2>
+                <p>cool cars game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="car" id="puzzleGames" style="flex-wrap: wrap;
+            justify-content: space-between;
+            text-decoration: none;">
+            <div class="card1">
+               <img  src= "img/puz1.jfif"    alt="puzzle">    
+                <h2>Puzzle </h2>
+                <p>puzzle card game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1"><a href="tetris11.html">
+                 <img  src= "img/tetris1.jpg"   alt="puzzle">
+                <h2>Tetrix</h2> </a>
+                <p>Lcubed funy game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+           </div>
+            <div class="card1">
+                 <img  src= "img/solitaire1.jpg"  alt="puzzle">
+                <h2>solitaire</h2>
+                <p>cards game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/puz4.jfif"alt="puzzle"> 
+                <h2>kids puzzle</h2>
+                <p>funy puzzle game for kids.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/puz5.jfif"alt="puzzle"> 
+                <h2>magic puzzles</h2>
+                <p>gold card game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">  <a href="minsw.html">
+                 <img  src= "img/mins.jpg"alt="puzzle"> 
+                <h2>minsweeper</h2></a>
+                <p>logical thiking game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1"><a href="snake.html">
+                <img  src= "img/snaqe1.jfif"alt="puzzle"> 
+                <h2>Snak</h2></a>
+                <p>funy game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/puz8.jfif"alt="puzzle"> 
+                <h2>Relaxing puzzles</h2>
+                <p>puzzle game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/puz3.jfif"alt="puzzle"> 
+                <h2>puzzle clubhouse</h2>
+                <p> funny game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="car" id="actionGames" style="flex-wrap: wrap;
+            justify-content: space-between;
+            text-decoration: none;">
+            <div class="card1">
+                <img  src= "img/a1.jfif"alt="action"   >
+                <h2>Motocicle race</h2>
+                <p>racing action game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/a2.jfif"alt="action"   >
+                <h2>action game</h2>
+                <p>shoot action game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/a3.jfif"alt="action"   >
+                <h2>Ascent</h2>
+                <p>Action game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/a4.jfif"alt="action"   >
+                <h2>bolt action</h2>
+                <p>shoot game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/a5.jfif"alt="action"   >
+                <h2>Resident evil 3</h2>
+                <p>Espace game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/action1.jpg"   alt="action"   >
+                <h2>Imperia</h2>
+                <p>Fghit game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/a7.jfif"alt="action"   >
+                <h2>Panic bot </h2>
+                <p>action game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/a8.jfif"alt="action"   >
+                <h2>Aduehture</h2>
+                <p>Archey game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src="img/shoot1.jpg"        alt="action"   >
+                <h2>shoot</h2>
+                <p>action shooting game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="car" id="girlGames" style="flex-wrap: wrap;
+            justify-content: space-between;
+            text-decoration: none;">
+            <div class="card1">
+                <img  src= "img/girl1.jfif"            alt="girl">
+                <h2>olivir</h2>
+                <p>girl funy game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+               <img  src= "img/dr2.jfif"            alt="girl">
+                <h2>girlie room</h2>
+                <p>beauty game girl.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/dr8.jfif"            alt="girl">
+                <h2>dress up</h2>
+                <p>fashen girl game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/dr5.jfif"            alt="girl">
+                <h2>girl power</h2>
+                <p>power and fuy game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/girl5.jfif"            alt="girl">
+                <h2>super camp</h2>
+                <p>camping game for girl.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/girl6.gif"            alt="girl">
+                <h2>aminzing girl</h2>
+                <p>aminzing beauty game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/girl7.jpg"            alt="girl">
+                <h2>keem</h2>
+                <p>game girl warrior.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img  src= "img/girl8.jpg"            alt="girl">
+                <h2>wild wist</h2>
+                <p>cooking game for girl.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/dr6.jfif"            alt="girl">
+                <h2>magic cistale</h2>
+                <p>druss up game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="car" id="cookingGames" style="flex-wrap: wrap;
+            justify-content: space-between;
+            text-decoration: none;">
+            <div class="card1">
+                <img  src= "img/cook1.jfif"          alt="cook"  >
+                <h2>cooking queen </h2> 
+                <p>cook funy game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/cook2.jfif"          alt="cook"  >
+                <h2>cooking games</h2>
+                <p>delicious cook game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/cook3.jfif"          alt="cook"  >
+                <h2>cooking diary</h2>
+                <p>grat cooking game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/cook4.jfif"          alt="cook"  >
+                <h2>domestic diva</h2>
+                <p>domestic cooking game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+               <img  src= "img/cook5.jfif"          alt="cook"  >
+                <h2>cooking craze</h2>
+                <p>funy and craze cook game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+               <img  src= "img/cook6.jfif"          alt="cook"  >
+                <h2>chef go</h2>
+                <p>enthusiastic cook game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/cook7.jfif"          alt="cook"  >
+                <h2> kitchen craze</h2>
+                <p>amazing cooking game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/cookk.jpg"          alt="cook"  >
+                <h2>cooking with emma</h2>
+                <p>the cook girl game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img  src= "img/girl8.jpg" alt="cook"  >
+                <h2>wild west</h2>
+                <p>deliciouse cook game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="car" id="shootingGames" style="flex-wrap: wrap;
+            justify-content: space-between;
+            text-decoration: none;">
+            <div class="card1">
+                <img src="img/shoot1.jpg" alt="shoot">
+                <h2>Shoot</h2>
+                <p>shooting action game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+               <img src="img/shoo1.jpg" alt="shoot">
+                <h2>shooting point</h2>
+                <p>pistol shooting game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="img/m7.jfif" alt="shoot">
+                <h2>Fortnite</h2>
+                <p>a popular shoot game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+               <img src="img/shoo3.jfif" alt="shoot">
+                <h2>Military</h2>
+                <p>exciting shooting game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="img/shoo4.jfif" alt="shoot">
+                <h2>shooter</h2>
+                <p>great gun game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+               <img src="img/shoo5.jfif" alt="shoot">
+                <h2>Ephoto360</h2>
+                <p>shooting game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+               <img src="img/shoo6.jfif" alt="shoot">
+                <h2>offensive combat.</h2>
+				<p>fighting game  </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="img/shoo7.jfif" alt="shoot">
+                <h2>Atlante firearms</h2>
+                <p>a gun shooting game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+               <img src="img/shoo8.jfif" alt="shoot">
+                <h2>shootr2</h2>
+                <p>a grat shoot game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="car" id="racingGames" style="flex-wrap: wrap;
+            justify-content: space-between;
+            text-decoration: none;">
+            <div class="card1">
+               <img src="img/car111.jpg" alt="racing">
+                <h2>brand prix</h2>
+                <p>raing game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/car1.jfif" alt="racing">
+                <h2>high on fuel</h2>
+                <p>fast cars game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/rac3.jfif" alt="racing">
+                <h2>motorbike racing</h2>
+                <p>moto racing game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="img/rac4.jfif" alt="racing">
+                <h2>racing moto</h2>
+                <p>fast moto game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/car5.jfif" alt="racing">
+                <h2>car2</h2>
+                <p>fast cars.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/rac5.jfif" alt="racing">
+                <h2>moto racing 2</h2>
+                <p>motocycle driver game</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="img/car7.jfif" alt="racing">
+                <h2>Foza2</h2>
+                <p>fast racing car game</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/rac6.jpg" alt="racing">
+                <h2>Racing fever</h2>
+                <p>3d racie moto game</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="img/rac8.jfif" alt="racing">
+                <h2>racing moto</h2>
+                <p>fast moto game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        
+                <div class="car" id="dressupGames" style="flex-wrap: wrap;
+            justify-content: space-between;
+            text-decoration: none;">
+            <div class="card1">
+                <img src="img/dr1.jfif" alt="dress">
+                <h2> baby dressup</h2>
+                <p>fantastic kids game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/dr2.jfif" alt="dress">
+                <h2>girl room</h2>
+                <p>dress girl game </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/dr3.png" alt="dress">
+                <h2>dressup who</h2>
+                <p>funy game for girl.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/girl5.jfif" alt="dress">
+                <h2>super camp </h2>
+                <p>dress game.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="img/dr5.jfif" alt="dress">
+                <h2>girl power</h2>
+                <p>fantastic dress for girls.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="img/dr6.jfif" alt="dress">
+                <h2>Magic crystales</h2>
+                <p>dress up game .</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/dr7.jfif" alt="dress">
+                <h2>enjoydressuo</h2>
+                <p>funy game for girl .</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+                 <img src="img/dr8.jfif" alt="dress">
+                <h2>dress up mode</h2>
+                <p>amminzing dress game</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="card1">
+            
+			<img src="img/girl6.gif" alt="dress">
+                <h2>Ammanzing beach</h2>
+                <p>beauty girl game</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="car" id="sportGames" style="flex-wrap: wrap;
+        justify-content: space-between;
+        text-decoration: none;">
+        <div class="card1">
+           <img src="img/sp1.jfif" alt="sport">
+            <h2>Football</h2>
+            <p>football game.</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="card1">
+           <img src="img/sport1.jpg" alt="sport">
+            <h2>ski king</h2>
+            <p>ski game.</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="img/sport2.jpg" alt="sport">
+            <h2>Tennis master</h2>
+            <p> funy tennis game.</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="img/sport3.jpg" alt="sport">
+            <h2>basketball stars</h2>
+            <p>basket game.</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="img/sp5.jfif" alt="sport">
+            <h2>street soccer</h2>
+            <p> great football game</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="card1">
+           <img src="img/sport4.jpg" alt="sport">
+            <h2>cycle exterme</h2>
+            <p>bycycle game.</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+        <div class="card1">
+           <img src="img/sp7.jfif" alt="sport">
+            <h2>football</h2>
+            <p>funy football game.</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="img/sp8.jpg" alt="sport">
+            <h2>street football</h2>
+            <p>amazing football game</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+        <div class="card1">
+           <img src="img/sport3.jfif" alt="sport">
+            <h2>winter games</h2>
+            <p>ski game.</p>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <div class="car" id="kidsGames" style="flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;">
+    <div class="card1">
+        <img src="img/kid1.png" alt="kids">
+        <h2>big Kid</h2>
+        <p>funy kids game.</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="card1">
+       <img src="img/kid2.jfif" alt="kids">
+        <h2>Kids</h2>
+        <p>kids game.</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="card1">
+        <img src="img/kid3.jfif" alt="kids">
+        <h2>dee zaster</h2>
+        <p>adventure kids game.</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="card1">
+        <img src="img/kid4.jfif" alt="kids">
+        <h2>back to shool</h2>
+        <p>education game for kids.</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="card1">
+       <img src="img/kid5.jfif" alt="kids">
+        <h2>game show</h2>
+        <p>Aminzing kids game.</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+    </div>
+    <div class="card1">
+       <img src="img/kid6.png" alt="kids">
+        <h2>pbs kids</h2>
+        <p>funy boy game</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="card1">
+       <img src="img/snaqe1.jfif" alt="kids">
+        <h2>hungry</h2>
+        <p>snake game.</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+    </div>
+    <div class="card1">
+        <img src="img/dr1.jfif" alt="kids">
+        <h2>baby girl</h2>
+        <p>dress kids game.</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="card1">
+       <img src="img/puz1.jfif" alt="kids">
+        <h2>puzzle</h2>
+        <p>puzzlekids game.</p>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+</div>
+<div class="car" id="multiplayerGames" style="flex-wrap: wrap;
+justify-content: space-between;
+text-decoration: none;">
+<div class="card1">
+     <img src="img/action1.jpg" alt="multiplayer">
+    <h2>imperia</h2>
+    <p>Fighting game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/m1.png" alt="multiplayer">
+    <h2>blockstar</h2>
+    <p>mltiplayer funy game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/m2.jfif" alt="multiplayer">
+    <h2>darksburg</h2>
+    <p>multiplaye game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+   <img src="img/m3.png" alt="multiplayer">
+    <h2>wenchieve</h2>
+    <p>action multiplayer game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+   <img src="img/m4.jfif" alt="multiplayer">
+    <h2>Battlesky</h2>
+    <p>amazing game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/m5.jfif" alt="multiplayer">
+    <h2>Among us</h2>
+    <p>popular multiplayer game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+   <img src="img/m6.jfif" alt="multiplayer">
+    <h2>Roblox</h2>
+    <p>multiplayer game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/m7.jfif" alt="multiplayer">
+    <h2>Fortnite</h2>
+    <p>Amizing multiplayer game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/m8.jfif" alt="multiplayer">
+    <h2>pool</h2>
+    <p>bilyar game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+</div>
+<div class="car" id="strategyGames" style="flex-wrap: wrap;
+justify-content: space-between;
+text-decoration: none;">
+<div class="card1">
+    <img src="img/strat1.jpg" alt="strategy">
+    <h2>Anocris</h2>
+    <p>a great stategie game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+     <img src="img/st1.jfif" alt="strategy">
+    <h2>Arena fate</h2>
+    <p>strategie game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/st2.jfif" alt="strategy">
+    <h2>aise of nations</h2>
+    <p>Explored game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+     <img src="img/st3.jfif" alt="strategy">
+    <h2>sparta</h2>
+    <p>funy stratrgie game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/str1.jpg" alt="strategy">
+    <h2>stratego</h2>
+    <p>card strategie game</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/str2.jpg" alt="strategy">
+    <h2>pirries</h2>
+    <p>pirate strategi game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/str3.jpg" alt="strategy">
+    <h2>curseo treasur</h2>
+    <p>exciting strategie game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+     <img src="img/stra3.jpg" alt="strategy">
+    <h2>Tentlan</h2>
+    <p>explored game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+</div>
+<div class="card1">
+    <img src="img/st8.jfif" alt="strategy">
+    <h2>civilization</h2>
+    <p>fighting strategie game.</p>
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+</div>
+</div>
+        </div>
+        <div class="left-container"   >
+            <h2>Most Popular</h2>
+            <div class="card">
+                <span id="result" class="rimage" > </span>   
+                <h2>card1</h2>
+            </div>
+            <div class="card">
+                <span id="result2" class="rimage"  > </span>   
+                <h2>card2</h2>
+            </div>
+            <div class="card">
+                <span id="result3" class="rimage" > </span>   
+                <h2>card3</h2>
+            </div>
+        </div>
+    </div>
+<script>
+//left container images
+
+function random() {
+
+ getRandomImage1();
+ getRandomImage2();
+ getRandomImage3();
+ 
+ document.getElementById('visi').style.visibility = "visible"
+
+}
+window.onload = getRandomImage1();
+window.onload = getRandomImage2();
+window.onload = getRandomImage3();
+
+
+
+function getRandomImage1() {
+  //declare an array to store the images
+  var randomImage =  new Array("img/action1.jpg" ,"img/car11.jpg" ,"img/strat1.jpg" ,"img/st8.jfif","img/sport3.jpg",);
+           
+  //generate a number and provide to the image to generate randomly
+  var number = Math.floor(Math.random() * randomImage.length);
+
+  //return the images generated by a random number
+  return (document.getElementById("result").innerHTML =
+    '<img src="' + randomImage[number] + '" />');
+}
+
+function getRandomImage2() {
+  //declare an array to store the images
+  var randomImage =  new Array("img/m5.jfif","img/kid3.jfif","img/dr5.jfif","img/a1.jfif","img/shoot1.jpg",);
+           
+  //generate a number and provide to the image to generate randomly
+  var number = Math.floor(Math.random() * randomImage.length);
+
+  //return the images generated by a random number
+  return (document.getElementById("result2").innerHTML =
+    '<img src="' + randomImage[number] + '" />');
+}
+
+function getRandomImage3() {
+  //declare an array to store the images
+  var randomImage =  new Array("img/st1.jfif","img/car11.jpg","img/cook3.jfif" ,"img/m7.jfif","img/sport1.jpg",);
+           
+  //generate a number and provide to the image to generate randomly
+  var number = Math.floor(Math.random() * randomImage.length);
+
+  //return the images generated by a random number
+  return (document.getElementById("result3").innerHTML =
+    '<img src="' + randomImage[number] + '" />');
+}
+
+//right container images
+
+document.getElementById("car1").addEventListener("click", displayCar);
+
+function displayCar() {
+  document.getElementById("top-text1").innerHTML = "Car Games";
+  
+  document.getElementById("carGames").style.display = "flex";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("puzzle1").addEventListener("click", displayPuzzle);
+
+function displayPuzzle() {
+  document.getElementById("top-text1").innerHTML = "Puzzle Games";
+ 
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "flex";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("action1").addEventListener("click", displayAction);
+
+function displayAction() {
+  document.getElementById("top-text1").innerHTML = "Action Games";
+  
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "flex";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("girl1").addEventListener("click", displayGirl);
+
+function displayGirl() {
+  document.getElementById("top-text1").innerHTML = "Girl Games";
+  
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "flex";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("cooking1").addEventListener("click", displayCooking);
+
+function displayCooking() {
+  document.getElementById("top-text1").innerHTML = "Cooking Games";
+ 
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "flex";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("racing1").addEventListener("click", displayRacing);
+
+function displayRacing() {
+  document.getElementById("top-text1").innerHTML = "Racing Games";
+ 
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "flex";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("shooting1").addEventListener("click", displayShooting);
+function displayShooting() {
+  document.getElementById("top-text1").innerHTML = "Shooting Games";
+ 
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "flex";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("dressup1").addEventListener("click", displayDressup);
+
+function displayDressup() {
+  document.getElementById("top-text1").innerHTML = "Dressup Games";
+  
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "flex";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("sport1").addEventListener("click", displaySports);
+
+function displaySports() {
+  document.getElementById("top-text1").innerHTML = "Sport Games";
+  
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "flex";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("kids1").addEventListener("click", displayKids);
+
+function displayKids() {
+  document.getElementById("top-text1").innerHTML = "Kids Games";
+ 
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "flex";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document
+  .getElementById("multiplayer1")
+  .addEventListener("click", displayMultiplayer);
+
+function displayMultiplayer() {
+  document.getElementById("top-text1").innerHTML = "Multiplayer Games";
+ 
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "flex";
+  document.getElementById("strategyGames").style.display = "none";
+}
+
+document.getElementById("strategy1").addEventListener("click", displayStrategy);
+
+function displayStrategy() {
+  document.getElementById("top-text1").innerHTML = "Strategy Games";
+  
+  document.getElementById("carGames").style.display = "none";
+  document.getElementById("puzzleGames").style.display = "none";
+  document.getElementById("actionGames").style.display = "none";
+  document.getElementById("girlGames").style.display = "none";
+  document.getElementById("cookingGames").style.display = "none";
+  document.getElementById("shootingGames").style.display = "none";
+  document.getElementById("racingGames").style.display = "none";
+  document.getElementById("dressupGames").style.display = "none";
+  document.getElementById("sportGames").style.display = "none";
+  document.getElementById("kidsGames").style.display = "none";
+  document.getElementById("multiplayerGames").style.display = "none";
+  document.getElementById("strategyGames").style.display = "flex";
+}
+</script>
+
+<style>
+    .weather {
+	bottom:2px;
+	left:20px;
+	}
+	</style>
+	
+	<!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/tripoli-13119">
+	<img src="https://w.bookcdn.com/weather/picture/26_13119_1_1_95a5a6_250_7f8c8d_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=58488"
+	alt="booked.net"/></><!-- weather widget end -->
+	
+	
+	
+	
+	
+	
+</body>
+</html>

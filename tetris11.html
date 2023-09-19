@@ -1,0 +1,623 @@
+
+<html>
+ <head> 
+  <title>Tetris</title> 
+  
+   <link rel="stylesheet" href="style.css" />
+  <style>
+        *{padding:0; margin:0;  -webkit-user-select: none; }
+        .dive {width:360px; height:460px; transform: scale(1.0); transform-origin: 0 0;}
+        .tetris {position:absolute; top:20px; left:10px; font-family: 'Aclonica';font-size: 28px; color: teal;}
+        .by {position:absolute; top:40px; left:185px; font-size: 12px; }
+        
+        .maincanvas {position:absolute; top:56px; left:300px; display:block; border:2px solid teal;}
+        .subcanvas {position:absolute; top:210px; left:547px; display:block; border:2px solid teal;}
+        .labelscore {position:absolute; top:60px; left:547px; padding:0px; border:none;  text-align:left; font-weight:bold;}
+        .score {position:absolute; top:80px; left:547px; padding:0px; width:100px; height:45px; border:none; background:#eee; text-align:center; vertical-align: middle;line-height:45px; font-weight:bold; font-size: 28px; color:teal;}
+        .labellevel {position:absolute; top:125px; left:547px; padding:0px; border:none;  text-align:left; font-weight:bold;}
+        .level {position:absolute; top:145px; left:547px; padding:0px; width:100px; height:45px; border:none; background:#eee; text-align:center; vertical-align: middle;line-height:45px; font-weight:bold; font-size: 28px; color:teal;}
+        .next {position:absolute; top:190px; left:547px; padding:0px; border:none;  text-align:left;}
+        .left {position:absolute; top:320px; left:547px; padding:0px; width:45px; height:40px; border:none; background:teal; text-align:center; vertical-align: middle;line-height:40px;}
+        .right {position:absolute; top:320px; left:602px; padding:0px; width:45px; height:40px; border:none; background:teal; text-align:center; vertical-align: middle;line-height:40px;}
+        .rotate {position:absolute; top:370px; left:602px; padding:0px; width:45px; height:40px; border:none; background:teal; text-align:center; vertical-align: middle;line-height:40px;}
+        .down {position:absolute; top:420px; left:547px; padding:0px; width:100px; height:40px; border:none; background:teal; text-align:center; vertical-align: middle;line-height:40px;}
+        .pause{
+            position:absolute; top:110px; ; left:190px; padding:0px; width:45px; height:40px; border:none; background:teal; text-align:center; vertical-align: middle;line-height:40px;
+        }
+        .play{
+            position:absolute; top:110px; ; left:245px; padding:0px; width:45px; height:40px; border:none; background:teal; text-align:center; vertical-align: middle;line-height:40px;
+        }
+        .restart{
+            position:absolute; top:60px; ; left:190px; padding:0px; width:100px; height:40px; border:none; background:teal; text-align:center; vertical-align: middle;line-height:40px;
+        }
+        .rotatealt {position:absolute; top:370px; left:547px; padding:0px; width:45px; height:40px; border:none; background:teal; text-align:center; vertical-align: middle;line-height:40px;}
+        label:active { background-color: white;}
+    </style> 
+ </head> 
+ <body> 
+ 
+ 
+ <div class="nav-bar">
+      <ul>
+         <li><a href="contactUs.html">Contact us </a></li>
+        <li><a href="aboutUs.html">About us </a></li>
+        <li><a href="index.html"> Games </a></li>
+      </ul>
+   </div>
+   
+  <div id="div" class="dive"> 
+   <h1 class="tetris">TETRIS</h1> 
+   <p class="by">by Najah Tartoussi</p>
+   
+   <canvas id="maincanvas" class="maincanvas" width="240" height="400"></canvas> 
+   <canvas id="subcanvas" class="subcanvas" width="96" height="96"></canvas> 
+   <label class="labelscore">Score:</label> 
+   <label class="score" id="score">0</label> 
+   <label class="labellevel">Level:</label> 
+   <label class="level" id="level">1</label> 
+   <label class="next">Next:</label> 
+   <label class="left" id="left">&lt;&lt;&lt;</label> 
+   <label class="right" id="right">&gt;&gt;&gt;</label> 
+   <label class="down" id="down">down</label> 
+   <label class="rotate" id="rotate">R</label> 
+   <label class="rotatealt" id="rotatealt">R</label> 
+   <label class="pause" id="pause">Pause</label> 
+   <label class="play" id="play">Play</label> 
+   <label class="restart" id="restart">Restart</label> 
+  </div> 
+  <script>
+        alert("Start game have fun!.");
+        var res_y=window.screen.availHeight; //y axis pixel count
+        var res_x=window.screen.availWidth; //horizontal pixel count
+        var coeff; 
+        if (res_x*460>res_y*360) //set landscape size coefficient
+            coeff=res_y/460;
+        else                   //set portrait size coefficient
+            coeff=res_x/360;
+        document.getElementById("div").style.transform="scale("+coeff+")"; //resize page to fit any resolution
+        const maincanvas=document.getElementById('maincanvas');
+        const con=maincanvas.getContext('2d');
+        const subcanvas=document.getElementById('subcanvas');
+        const ctx=subcanvas.getContext('2d');
+        //controls
+        var left = document.getElementById("left");
+        var right = document.getElementById("right");
+        var down = document.getElementById("down");
+        var rotate = document.getElementById("rotate");
+        var rotatealt = document.getElementById("rotatealt");
+        var pause = document.getElementById("pause");
+        var unpause = document.getElementById("play");
+        var restart = document.getElementById("restart");
+        var dropinterval=0; //time to drop each piece
+        var nextpiece='T'; //as the name suggests
+        const colors=[null,'#0D47A1','#FFD999','#0097A7','#5E35B1','#1B5E20','#B71C1C','#E65100',];
+        con.scale(20,20); //scale down the canvas
+        ctx.scale(20,20);
+        const player={
+            pos:{x:0,y:0},
+            matrix:createpiece(null),
+            score:0,
+        }
+        //creates 2d array
+        function creatematrix(dim){
+            const matrix = [];
+            for (var i = 0; i < dim[0]; ++i) {
+                matrix.push(dim.length == 1 ? 0 : creatematrix(dim.slice(1)));
+            }
+            return matrix;
+        }
+        var field=creatematrix([20,12]); //grid representation of canvas
+        //copies one array into another with an offset
+        function join(main,sub){
+            for (var y=0; y<sub.matrix.length; ++y){
+                for (var x=0; x<sub.matrix[y].length; ++x){
+                    if(sub.matrix[x][y]!==0){
+                        main[x+sub.pos.y][y+sub.pos.x]=sub.matrix[x][y];
+                    }
+                }
+            }
+        }
+        //has layout of all pieces
+        function createpiece(piece){
+            switch(piece){
+              case 'L':
+                  return [[0,1,0],
+                          [0,1,0],
+                          [0,1,1],];
+              break;
+              case 'O':
+                  return [[2,2],
+                          [2,2],];
+              break;
+              case 'I':
+                  return [[0,3,0,0],
+                          [0,3,0,0],
+                          [0,3,0,0],
+                          [0,3,0,0],];
+              break;
+              case 'T':
+                  return [[0,0,0],
+                          [4,4,4],
+                          [0,4,0],];
+              break;
+              case 'S':
+                  return [[0,5,5],
+                          [5,5,0],
+                          [0,0,0],];
+              case 'Z':
+                  return [[6,6,0],
+                          [0,6,6],
+                          [0,0,0],];
+              case 'J':
+                  return [[0,7,0],
+                          [0,7,0],
+                          [7,7,0],];
+              break;
+            }
+        }
+        //changes the next piece
+        function changeplayer(){
+            var pieces = ['L', 'O', 'I', 'T', 'S', 'Z', 'J']; 
+            player.matrix=createpiece(nextpiece);
+            nextpiece=pieces[(Math.random() * pieces.length) | 0];
+            player.pos.y=0;
+            player.pos.x=(field[0].length/2|0)-(player.matrix[0].length/2|0);
+            if(checkcollision(field,player)){
+                alert("⚠GAME OVER!!!⚠\nScore: "+player.score);
+                field=creatematrix([20,12]);
+                player.score=0;
+                scorerefresh();
+            }
+        }
+        //draws each piece from its matrix
+        function drawpieces(matrix, startpos){
+            for (var y=0; y<matrix.length; ++y){
+                for (var x=0; x<matrix[y].length; ++x){
+                    if(matrix[y][x]!==0){
+                        con.fillStyle = colors[matrix[y][x]];
+                        con.fillRect(x+startpos.x,y+startpos.y,1,1);
+                        con.lineWidth=0.1;
+                        con.strokeStyle = 'black';
+                        con.strokeRect(x+startpos.x,y+startpos.y,1,1);
+ 
+                    }
+                }
+            }
+        }
+        //draws the next piece
+        function drawnext(){
+            matrix=createpiece(nextpiece);
+            for (var y=0; y<matrix.length; ++y){
+                for (var x=0; x<matrix[y].length; ++x){
+                    if(matrix[y][x]!==0){
+                        ctx.fillStyle = colors[matrix[y][x]];
+                        ctx.fillRect(x+1,y+1,1,1);
+                        ctx.lineWidth=0.1;
+                        ctx.strokeStyle = 'black';
+                        ctx.strokeRect(x+1,y+1,1,1);
+     
+                    }
+                }
+            }
+        }
+        //clears all redraws on canvas
+        function draw(){
+            con.fillStyle='black';
+            con.fillRect(0,0,maincanvas.width,maincanvas.height);
+            ctx.fillStyle='black';
+            ctx.fillRect(0,0,subcanvas.width,subcanvas.height);
+            drawpieces(field,{x:0,y:0});
+            drawpieces(player.matrix,player.pos);
+            drawnext();
+        }
+        //checks for collision using grid and matrix
+        function checkcollision(main, sub){
+            const matrix=sub.matrix,offset=sub.pos;
+            for (var y=0;y<matrix.length;++y){
+                for (var x=0;x<matrix[y].length;++x){
+                    if ((matrix[y][x] !== 0)&&(main[y+offset.y]&&main[y+offset.y][x+offset.x])!==0) return true;
+                }
+            }
+            return false;
+        }
+        //clears each filled row
+        function clear(){
+            first: for(var y=field.length-1;y>0;--y){
+                for(var x=0;x<field[y].length;++x){
+                  if (field[y][x]===0)continue first;
+                }
+                const removed=[0,0,0,0,0,0,0,0,0,0,0,0]
+                field.splice(y,1)[0];
+                field.unshift(removed);
+                ++y;
+                player.score+=10;
+            }
+        }
+        //moves piece on x axis
+        function movepiece(dir){
+            player.pos.x+=dir;
+            if (checkcollision(field,player)) player.pos.x-=dir;
+        }
+
+        //play pause button
+        pause.onclick = function(){
+            dropinterval=-1000000;
+            }
+        unpause.onclick = function(){
+            dropinterval=0;
+            }
+        //restart button
+        restart.onclick = function(){
+        field=creatematrix([20,12]);
+                player.score=0;
+                scorerefresh();
+				
+			var pieces = ['L', 'O', 'I', 'T', 'S', 'Z', 'J']; 
+
+            player.matrix=createpiece(nextpiece);
+
+            nextpiece=pieces[(Math.random() * pieces.length) | 0];
+
+            player.pos.y=0;
+
+            player.pos.x=(field[0].length/2|0)-(player.matrix[0].length/2|0);	
+				
+				
+        }
+        
+        //drops each piece by one unit
+        function droppiece(){
+            player.pos.y++;
+            if(checkcollision(field,player)){
+                player.pos.y--;
+                join(field,player);
+                changeplayer();
+                clear();
+                scorerefresh();
+            }
+            dropinterval=0;
+        }
+        //transposes each matrix then switches rows or columns
+        function rotatematrix(matrix,clockwise){
+            for (var y=0;y<matrix.length;++y){
+                for (var x=0;x<y;++x){
+                    var temp=matrix[y][x];
+                    matrix[y][x]=matrix[x][y];
+                    matrix[x][y]=temp;
+                }
+            }
+            if (clockwise){
+                for (var y=0;y<matrix.length;++y){
+                    for (var x=0;x<Math.round(matrix[y].length/2);++x){
+                        var temp=matrix[y][x];
+                        matrix[y][x]=matrix[y][matrix[y].length-1-x];
+                        matrix[y][matrix[y].length-1-x]=temp;
+                    }
+                }
+            }
+            else{
+                for (var y=0;y<Math.round(matrix.length/2);++y){
+                    for (var x=0;x<matrix[y].length;++x){
+                        var temp=matrix[y][x];
+                        matrix[y][x]=matrix[matrix.length-1-y][x];
+                        matrix[matrix.length-1-y][x]=temp;
+                    }
+                }
+            }
+        }
+        //rotates each piece
+        function rotatepiece(clockwise){
+            var pos=player.pos.x,offset=1;
+            rotatematrix(player.matrix,clockwise);
+            while(checkcollision(field,player)){
+                player.pos.x+=offset;
+                offset=-(offset+(offset>0?1:-1));
+                if(offset>player.matrix[0].length){
+                    rotatematrix(player.matrix,!clockwise);
+                    player.pos.x=pos;
+                    return;
+                }
+            }
+        }
+        //animates game with time change
+        var time_0=0,timechange;
+        function update(timestamp){
+            timechange=timestamp-time_0;
+            dropinterval+=timechange;
+            if (dropinterval>=1000){
+                droppiece();
+            }
+            draw();
+            time_0=timestamp;
+            window.webkitRequestAnimationFrame(update);
+        }
+        //updates score
+        function scorerefresh(){
+            document.getElementById("score").innerText=player.score;
+            document.getElementById("level").innerText=Math.floor(player.score/100)+1;
+        }
+        //event listeners
+        left.addEventListener("click", onPressleft, false);
+        right.addEventListener("click", onPressright, false);
+        down.addEventListener("click", onPressdown, false);
+        rotate.addEventListener("click", onClockwise, false);
+        rotatealt.addEventListener("click", onAnticlockwise, false);
+        //event handlers
+        function onPressleft() {
+            movepiece(-1);
+        }
+        function onPressright() {
+            movepiece(1);
+        }
+        function onPressdown() {
+            droppiece();
+        }
+        function onClockwise(){
+            rotatepiece(1);
+        }
+        function onAnticlockwise(){
+            rotatepiece(0);
+        }
+        changeplayer();
+        update(time_0); //sets time interval for animations
+    </script> 
+	
+	<style>
+	
+	body {  
+            margin: 0;  
+            background-image: url('img/t1.jpg');
+ background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+        }  
+.build1{
+    width: 100px;
+    height: 260px;
+    background: #7766ff;
+    border-bottom: 4px #5544ff solid;
+    border-top: 2px #5544ff solid;
+    border-left: 2px #5544ff solid;
+    border-right: 2px #5544ff solid;
+    position: fixed;
+    bottom: 0px;
+    left: 130px;
+    padding-top: 30px;
+    border-radius: 3px 3px 0 0;
+}
+.build2{
+    width: 80px;
+    height: 210px;
+    background: #7766ff;
+    border-bottom: 4px solid #5544ff;
+    border-top: 2px #5544ff solid;
+    border-right: 2px #5544ff solid;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding-left: 10px;
+    border-radius: 0 3px 0 0;
+}
+.build3{
+    width: 80px;
+    height: 245px;
+    background: #7766ff;
+    border-bottom: 4px solid #5544ff;
+    border-top: 2px #5544ff solid;
+    border-left: 2px #5544ff solid;
+    position: fixed;
+    bottom: 0px;
+    left: 47px;
+    padding-right: 7px;
+    padding-left: 5px;
+    border-radius: 3px 0 0 0;
+}
+.build4{
+    width: 65px;
+    height: 195px;
+    background: #7766ff;
+    border-bottom: 4px solid #5544ff;
+    border-top: 2px solid #5544ff;
+    border-left: 2px solid #5544ff;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 3px 0 0 0;
+}
+.moon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #ffffff;
+    border: #dbdbdb solid 2px;
+    position: fixed;
+}
+.sr1{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ffffff;
+    left: 160px;
+    top: 22px;
+}
+.sr2 {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ffffff;
+    left: 260px;
+    top: 52px;
+}
+.sr3{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ffffff;
+    left: 275px;
+    top: 152px;
+}
+.sr4 {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ffffff;
+    left: 170px;
+    top: 107px;
+}
+.sr5{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ffffff;
+    left: 85px;
+    top: 142px;
+}
+.sr6 {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ffffff;
+    left: 210px;
+    top: 72px;
+}
+.sr7{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ffffff;
+    left: 230px;
+    top: 122px;
+}
+.sr8{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ffffff;
+    left: 30px;
+    top: 177px;
+}
+.ww1{
+ width: 25px;
+ height: 25px;
+ position: fixed;
+ left: 185px;
+ top: 160px;
+ background: #7766ff;
+ -webkit-animation: myAn 7s;
+ }
+ @-webkit-keyframes myAn
+ {
+ from {background: #7766ff;}
+ to {background: #bdabad;}
+ }
+.ww2{
+ width: 25px;
+ height: 25px;
+ position: fixed;
+ left: 150px;
+ top: 200px;
+ background: #7766ff;
+ -webkit-animation: myAn 7s;
+ }
+ @-webkit-keyframes myAn
+ {
+ from {background: #7766ff;}
+ to {background: #bdabad;}
+ } 
+  .ww3{
+ width: 25px;
+ height: 25px;
+ position: fixed;
+ left: 260px;
+ top: 240px;
+ background: #7766ff;
+ -webkit-animation: myAn 7s;
+ }
+ @-webkit-keyframes myAn
+ {
+ from {background: #7766ff;}
+ to {background: #bdabad;}
+ } 
+.ww4{
+ width: 25px;
+ height: 25px;
+ position: fixed;
+ left: 25px;
+ top: 270px;
+ background: #7766ff;
+ -webkit-animation: myAn 7s;
+ }
+ @-webkit-keyframes myAn 
+ {
+ from {background: #7766ff;}
+ to {background: #bdabad;}
+ } 
+.ww5{
+ width: 25px;
+ height: 25px;
+ position: fixed;
+ left: 90px;
+ top: 220px;
+ background: #7766ff;
+ -webkit-animation: myAn 7s;
+ }
+ @-webkit-keyframes myAn
+ {
+ from {background: #7766ff;}
+ to {background: #bdabad;}
+ } 
+.hl1{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #dbdbdb;
+    position: fixed;
+    left: 23px;
+    top: 40px;
+}
+     .hl2{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #dbdbdb;
+    position: fixed;
+    left: 60px;
+    top: 27px;
+}
+.hl3{
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background: #dbdbdb;
+    position: fixed;
+    left: 45px;
+    top: 75px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</style>
+	
+	
+	
+	
+	
+	
+ </body>
+</html>
