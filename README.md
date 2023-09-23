@@ -4,9 +4,9 @@ Online games website (04/2020):    This is my first web poject ,a games site, pl
 1. Clone the repository to your local machine using the command ``` git clone https://github.com/.../...git``
 2. Open ```index.html``` in a web browser to view the website
 
-###Usage 
+##Usage 
 
-#### Preview
+## Preview
 ![Screenshot of Cuisine website](./README_images/2023-04-06%2020-21-37.gif)
 ![Screenshot of Cuisine website](./README_images/2023-04-06%2020-22-22.gif)
 ![Screenshot of Cuisine website](./README_images/2023-04-06%2020-23-01.gif)
@@ -18,7 +18,7 @@ Online games website (04/2020):    This is my first web poject ,a games site, pl
 ![Screenshot of Cuisine website](./README_images/ezgif.com-optimize%20(3).gif)
 ![Screenshot of Cuisine website](./README_images/ezgif.com-optimize%20(4).gif)
 
-##### Technologies Used
+## Technologies Used
 The project was built using the following technologies:
 - HTML
 - CSS
