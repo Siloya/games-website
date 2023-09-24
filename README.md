@@ -5,18 +5,17 @@ Online games website (04/2020):    This is my first web poject ,a games site, pl
 2. Open ```index.html``` in a web browser to view the website
 
 ## Usage 
-The website contains 6 pages:
--home page 
-
--about us page 
--contact us page
--tetris game page 
--mineswipper game page
--snake game page  
-first we have the home page that contain the navigationbar to go to the about us , and contact us pages , 
-and in the puzzle category we can move to the three games we have( tetris,minsweper,snake) ,
-also in this pages we have a slider that automatically moves images every 3s,
-and we have a 12 categories of games( car , puzzle, action, girl .. ) when we click on one of this categories ,the games of this category appear in the zone bellow( at the fist this zone is empty ) ,and on the right, we have a zone display three games, chosen at random from the existing games,each time the visitor clicks on a category, it display three games chosen at random.
+The website contains 6 pages:  
+-home page   
+-about us page   
+-contact us page  
+-tetris game page   
+-mineswipper game page  
+-snake game page    
+first we have the home page that contain the navigationbar to go to the about us , and contact us pages ,   
+and in the puzzle category we can move to the three games we have( tetris,minsweper,snake) ,  
+also in this pages we have a slider that automatically moves images every 3s,  
+and we have a 12 categories of games( car , puzzle, action, girl .. ) when we click on one of this categories ,the games of this category appear in the zone bellow( at the fist this zone is empty ) ,and on the right, we have a zone display three games, chosen at random from the existing games,each time the visitor clicks on a category, it display three games chosen at random.  
 
 ## Preview
 ![Screenshot of games website](./README_images/2023-04-06%2020-21-37.gif)
