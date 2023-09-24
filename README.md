@@ -22,7 +22,7 @@ and we have a 12 categories of games( car , puzzle, action, girl .. ) when we cl
 ![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(17).png)
 ![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(20).png)
 ![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(21).png) 
-![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(21).png)
+![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(19).png)
 ![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(22).png)
 ![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(23).png)
 ![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(26).png)
