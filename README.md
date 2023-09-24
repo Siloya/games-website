@@ -26,6 +26,10 @@ and we have a 12 categories of games( car , puzzle, action, girl .. ) when we cl
 ![Screenshot of games website](./screenchot/Screenchot (23).png) 
 ![Screenshot of games website](./screenchot/Screenchot (26).png)  
 ![image](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
+![Screenchot (14)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
+![Screenchot (17)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
+![Screenchot (20)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
+![Screenchot (21)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
 
 ## Technologies Used
 The project was built using the following technologies:
