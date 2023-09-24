@@ -14,8 +14,8 @@ The website contains 6 pages:
 -snake game page    
 first we have the home page that contain the navigationbar to go to the about us , and contact us pages ,   
 and in the puzzle category we can move to the three games we have( tetris,minsweper,snake) ,  
-also in this pages we have a slider that automatically moves images every 3s,  
-and we have a 12 categories of games( car , puzzle, action, girl .. ) when we click on one of this categories ,the games of this category appear in the zone bellow( at the fist this zone is empty ) ,and on the right, we have a zone display three games, chosen at random from the existing games,each time the visitor clicks on a category, it display three games chosen at random.  
+also in this pages we have a slider that automatically moves theimages every 3s,  
+and we have a 12 categories of games( car , puzzle, action, girl .. ) when we click on one of this categories ,the games of this category appear in the zone bellow( at the fist this zone is empty ) ,and on the right, we have a zone display three games, from the existing games,each time the visitor clicks on a category, it display three games chosen at random.  
 
 ## Preview
 ![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(14).png)
