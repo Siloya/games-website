@@ -19,15 +19,12 @@ and we have a 12 categories of games( car , puzzle, action, girl .. ) when we cl
 
 ## Preview
 ![Screenshot of games website](./screenchot/Screenchot (14).png)
-![Screenshot of games website](./README_images/2023-04-06%2020-22-22.gif)
-![Screenshot of games website](./README_images/2023-04-06%2020-23-01.gif)
-![Screenshot of games website](./README_images/2023-04-06%2020-23-15.gif)
-![Screenshot of games website](./README_images/2023-04-06%2021-58-49.gif)
-![Screenshot of games website](./README_images/ezgif.com-optimize.gif)
-![Screenshot of games website](./README_images/ezgif.com-optimize%20(1).gif)
-![Screenshot of games website](./README_images/ezgif.com-optimize%20(2).gif)
-![Screenshot of games website](./README_images/ezgif.com-optimize%20(3).gif)
-![Screenshot of games website](./README_images/ezgif.com-optimize%20(4).gif)
+![Screenshot of games website](./screenchot/Screenchot (17).png)
+![Screenshot of games website](./screenchot/Screenchot (20).png)
+![Screenshot of games website](./screenchot/Screenchot (21).png)
+![Screenshot of games website](./screenchot/Screenchot (22).png)
+![Screenshot of games website](./screenchot/Screenchot (23).png)
+![Screenshot of games website](./screenchot/Screenchot (26).png)
 
 ## Technologies Used
 The project was built using the following technologies:
