@@ -18,7 +18,7 @@ also in this pages we have a slider that automatically moves images every 3s,
 and we have a 12 categories of games( car , puzzle, action, girl .. ) when we click on one of this categories ,the games of this category appear in the zone bellow( at the fist this zone is empty ) ,and on the right, we have a zone display three games, chosen at random from the existing games,each time the visitor clicks on a category, it display three games chosen at random.  
 
 ## Preview
-![Screenshot of games website](./README_images/2023-04-06%2020-21-37.gif)
+![Screenshot of games website](./schreenchot poject images/screenchot14)
 ![Screenshot of games website](./README_images/2023-04-06%2020-22-22.gif)
 ![Screenshot of games website](./README_images/2023-04-06%2020-23-01.gif)
 ![Screenshot of games website](./README_images/2023-04-06%2020-23-15.gif)
