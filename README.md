@@ -18,14 +18,14 @@ also in this pages we have a slider that automatically moves images every 3s,
 and we have a 12 categories of games( car , puzzle, action, girl .. ) when we click on one of this categories ,the games of this category appear in the zone bellow( at the fist this zone is empty ) ,and on the right, we have a zone display three games, chosen at random from the existing games,each time the visitor clicks on a category, it display three games chosen at random.  
 
 ## Preview
-![Screenshot of games website](./screenchot/Screenchot (14).png).
+![Screenshot of games website](./sceenchot project images/Screenchot (14).png).
 ![Screenshot of games website](./screenchot/Screenchot (17).png). 
 ![Screenshot of games website](./screenchot/Screenchot (20).png).  
 ![Screenshot of games website](./screenchot/Screenchot (21).png)  
 ![Screenshot of games website](./screenchot/Screenchot (22).png) 
 ![Screenshot of games website](./screenchot/Screenchot (23).png) 
 ![Screenshot of games website](./screenchot/Screenchot (26).png)  
-![image](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
+![image]([https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2](https://github.com/Siloya/games-website/blob/main/sceenchot%20project%20images/Screenshot%20(14).png))
 ![Screenchot (14)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
 ![Screenchot (17)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
 ![Screenchot (20)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
