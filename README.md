@@ -1,4 +1,4 @@
-# games-website
+![Screenshot (14)](https://github.com/Siloya/games-website/assets/111832256/17d9b091-976e-4af2-b617-8c588ff1308a)# games-website
 Online games website (04/2020):    This is my first web poject ,a games site, playable online in the browser. The site created entirely in front-end (client side), therefore HTML, CSS, and JavaScript
 ## Installation
 1. Clone the repository to your local machine using the command ``` git clone https://github.com/.../...git``
@@ -18,7 +18,7 @@ also in this pages we have a slider that automatically moves images every 3s,
 and we have a 12 categories of games( car , puzzle, action, girl .. ) when we click on one of this categories ,the games of this category appear in the zone bellow( at the fist this zone is empty ) ,and on the right, we have a zone display three games, chosen at random from the existing games,each time the visitor clicks on a category, it display three games chosen at random.  
 
 ## Preview
-![Screenshot of games website](./screenchot/Screenchot(14).png)
+![Screenshot of games website](./screenchot/Screenchot (14).png)
 ![Screenshot of games website](./README_images/2023-04-06%2020-22-22.gif)
 ![Screenshot of games website](./README_images/2023-04-06%2020-23-01.gif)
 ![Screenshot of games website](./README_images/2023-04-06%2020-23-15.gif)
