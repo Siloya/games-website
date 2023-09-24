@@ -18,8 +18,7 @@ also in this pages we have a slider that automatically moves images every 3s,
 and we have a 12 categories of games( car , puzzle, action, girl .. ) when we click on one of this categories ,the games of this category appear in the zone bellow( at the fist this zone is empty ) ,and on the right, we have a zone display three games, chosen at random from the existing games,each time the visitor clicks on a category, it display three games chosen at random.  
 
 ## Preview
-![Screenshot of games website](./sceenchot project images/Screenchot20%(14).png)
-
+![Screenshot of games website](./sceenchot%20project%20images/Screenshot%20(14).png)
 ![Screenshot of games website](./sceenchot20%project20%images/Screenchot20%(14).png).
 ![Screenshot of games website](./screenchot/Screenchot (17).png). 
 ![Screenshot of games website](./screenchot/Screenchot (20).png).  
@@ -33,6 +32,7 @@ and we have a 12 categories of games( car , puzzle, action, girl .. ) when we cl
 ![Screenchot (17)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
 ![Screenchot (20)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
 ![Screenchot (21)](https://github.com/Siloya/games-website/assets/111832256/97e87fa1-f2f5-4a70-9ac2-72bdbb08b5d2)
+![image](https://github.com/Siloya/games-website/assets/111832256/a7441d49-8b69-41fb-b033-6853b8e69f14)
 
 ## Technologies Used
 The project was built using the following technologies:
