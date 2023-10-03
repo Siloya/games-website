@@ -1,5 +1,5 @@
 # games-website
-Online games website (04/2020):    This is my first web poject ,a games site, playable online in the browser. The site created entirely in front-end (client side), therefore HTML, CSS, and JavaScript
+Online games website (04/2021):    This is my first web poject ,a games site, playable online in the browser. The site created entirely in front-end (client side), therefore HTML, CSS, and JavaScript
 ## Installation
 1. Clone the repository to your local machine using the command ``` git clone https://github.com/.../...git``
 2. Open ```index.html``` in a web browser to view the website
